@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f1c;
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.6);
+}
+
+.logo {
+  color: #4f9cff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1e3a8a, #0a0f1c);
+  text-align: center;
+}
+
+.hero span {
+  color: #4f9cff;
+}
+
+.hero-btns button,
+.hero-btns a {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+button {
+  background: #4f9cff;
+  border: none;
+  cursor: pointer;
+}
+
+.outline {
+  border: 1px solid #4f9cff;
+  color: #4f9cff;
+  background: transparent;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  background: #1f2937;
+  border-radius: 20px;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4f9cff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
